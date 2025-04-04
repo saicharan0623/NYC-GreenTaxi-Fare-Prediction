@@ -73,7 +73,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Create sidebar
-st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/f/f7/New_York_City_Taxi_medallion.png", width=100)
+st.sidebar.image("https://th.bing.com/th/id/OIP.RfdsjuoMoxaD_Ub7rBuHiQHaEo?w=285&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7", width=100)
 st.sidebar.title("NYC Green Taxi")
 st.sidebar.markdown("---")
 
