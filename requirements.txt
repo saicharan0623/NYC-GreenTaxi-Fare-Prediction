@@ -1,0 +1,30 @@
+# Core dependencies
+streamlit
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+
+# Interactive maps
+folium
+streamlit-folium
+
+# Interactive visualizations
+plotly
+
+# Image processing
+Pillow
+
+# Date handling
+python-dateutil
+
+# File handling
+pickle-mixin
+
+# Optional: for notebook development
+jupyter
+ipykernel
+
+# Optional: for deployment
+gunicorn
