@@ -1,6 +1,15 @@
-# NYC Green Taxi Trip Data Analysis
+<h1 align="center">🚕 NYC Green Taxi Trip Data Analysis</h1>
+
+<p align="center">
+  <a href="https://nyc-greentaxi-fare-prediction.streamlit.app">
+    🔗 View the App
+  </a>
+</p>
+
+---
 ![images](reference-1.png)
 ![images](reference-2.png)
+
 
 
 This repository contains a comprehensive analysis of NYC Green Taxi trip data from December 2020, focusing on exploratory data analysis, statistical testing, and predictive modeling.
