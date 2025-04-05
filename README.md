@@ -1,131 +1,108 @@
-<h1 align="center">🚕 NYC Green Taxi Trip Data Analysis</h1>
 
-<p align="center">
-  <a href="https://nyc-greentaxi-fare-prediction.streamlit.app">
-    🔗 View the App
-  </a>
-</p>
+# 🎬 Movies Web App Using TMDb API
+
+This is a responsive web application built using **React.js** and **Tailwind CSS**, powered by the [TMDb API](https://api.themoviedb.org/) to fetch real-time movie data. Users can search for any movie and instantly view its details including the poster, plot, rating, genre, and more.
 
 ---
-![images](reference-1.png)
-![images](reference-2.png)
 
+## ✨ Features
 
+- 🔍 Search movies by title in real time
+- 🖼️ View high-quality movie posters
+- 🎥 Get full details: title, genre, rating, actors, plot, and more
+- 💡 Smooth user experience with a dark-themed interface
+- 📱 Fully responsive design using Tailwind CSS
 
-This repository contains a comprehensive analysis of NYC Green Taxi trip data from December 2020, focusing on exploratory data analysis, statistical testing, and predictive modeling.
+---
 
-## Project Overview
+## 🛠️ Built With
 
-The project analyzes NYC Green Taxi trip data to understand patterns in trip costs, trip duration, payment methods, and passenger behavior. The analysis includes:
+- **React.js** – frontend JavaScript framework
+- **Tailwind CSS** – utility-first CSS framework
+- **TMDb API** – movie data source
 
-- Data cleaning and preprocessing
-- Exploratory data analysis
-- Statistical testing of hypotheses
-- Predictive modeling for total trip amount
-- A Streamlit application for interactive predictions
+---
 
-## Dataset
-
-The analysis uses the `green_tripdata_2020-12.parquet` file, which contains NYC Green Taxi trip records from December 2020. The dataset includes information such as:
-
-- Pick-up and drop-off times
-- Trip distance
-- Fare amounts
-- Payment types
-- Passenger counts
-- Geographic locations (pick-up and drop-off)
-
-## Features
-
-- **Data Cleaning**: Handling missing values, creating new features, and preparing the data for analysis
-- **Exploratory Analysis**: Visualizations of payment types, trip types, and temporal patterns
-- **Statistical Testing**: ANOVA tests for comparing means across categories and Chi-square tests for association
-- **Predictive Modeling**: Implementation of multiple regression models:
-  - Multiple Linear Regression
-  - Decision Tree
-  - Random Forest
-  - Gradient Boosting
-- **Interactive Application**: A Streamlit app for predicting trip costs based on user inputs
-
-## Requirements
+## 📦 Project Structure
 
 ```
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-scipy
-streamlit
-pyarrow  # For reading parquet files
+📂 Movies-Webapp-TMDB
+├── public/
+├── src/
+│   ├── components/
+│   ├── App.jsx
+│   ├── index.js
+├── tailwind.config.js
+├── package.json
+├── README.md        # This file
 ```
 
-## Installation
+---
 
-1. Clone this repository:
+## 🚀 Getting Started
+
+Follow these steps to get a local copy running:
+
+### 1. Clone the Repository
+
 ```bash
-git clone https://github.com/yourusername/nyc-taxi-analysis.git
-cd nyc-taxi-analysis
+git clone https://github.com/your-username/movies-webapp-tmdb.git
+cd movies-webapp-tmdb
 ```
 
-2. Install the required packages:
+### 2. Install Dependencies
+
 ```bash
-pip install -r requirements.txt
+npm install
 ```
 
-3. Download the dataset:
-   - The NYC TLC trip data can be downloaded from [NYC TLC Trip Records](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
-   - Save the file as `green_tripdata_2020-12.parquet` in the project directory
+### 3. Get a TMDb API Key
 
-## Usage
+- Go to [https://www.themoviedb.org/settings/api](https://www.themoviedb.org/settings/api)
+- Sign up for a free API key
 
-### Jupyter Notebook
+### 4. Add API Key
 
-Run the Jupyter Notebook to execute the complete analysis:
+Create a `.env` file in the root directory and add:
+
+```
+VITE_TMDB_API_KEY=your_api_key_here
+```
+
+### 5. Start the App
+
 ```bash
-jupyter notebook NYC_Green_Taxi_Analysis.ipynb
+npm run dev
 ```
 
-### Streamlit App
+Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
-Run the Streamlit app for interactive predictions:
-```bash
-streamlit run streamlit_app.py
-```
+---
 
-## Project Structure
+## 📸 Screenshots
 
-```
-nyc-taxi-analysis/
-├── NYC_Green_Taxi_Analysis.ipynb      # Main analysis notebook
-├── streamlit_app.py                   # Streamlit application
-├── lr_model.pkl                       # Saved Linear Regression model
-├── scaler.pkl                         # Saved feature scaler
-├── green_tripdata_2020-12.parquet     # Dataset (to be downloaded separately)
-├── requirements.txt                   # Package dependencies
-└── README.md                          # This file
-```
+_You can add these files in a `screenshots/` folder and embed them below._
 
-## Results
+| Search Page         | Movie Details        |
+|---------------------|----------------------|
+| ![](screenshots/search.png) | ![](screenshots/details.png) |
 
-Key findings from the analysis include:
-- Patterns in trip fares based on weekday and time of day
-- Differences in tipping behavior across payment methods
-- Factors that most significantly influence total trip costs
-- Performance comparison of different machine learning models
+---
 
-## Future Work
+## 💡 Future Enhancements
 
-- Integration of geographic data for spatial analysis
-- Time series analysis of trip patterns
-- Incorporating weather data for additional insights
-- Deployment of the model as a web service
+- Add search suggestions or auto-complete
+- Add favorite movie saving using `localStorage`
+- Support series and episode listings
+- Add trailer links from YouTube
+- Add light/dark theme toggle
 
-## License
+---
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 🤝 Contributing
 
-## Acknowledgements
+Feel free to fork this repository and submit pull requests. Feedback and ideas are welcome!
 
-- NYC Taxi & Limousine Commission for providing the dataset
-- The scikit-learn and pandas teams for their excellent libraries
+---
+
+Enjoy discovering movies! 🍿
