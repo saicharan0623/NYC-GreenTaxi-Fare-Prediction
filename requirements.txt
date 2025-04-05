@@ -28,3 +28,4 @@ ipykernel
 
 # Optional: for deployment
 gunicorn
+statsmodels
