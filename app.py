@@ -313,7 +313,6 @@ if app_mode == "Prediction Tool":
         # Display prediction
         st.markdown(f"""
         <div class="prediction-result">
-            <h2>Predicted Fare: ${predicted_fare:.2f}</h2>
             <p>Estimated metered fare: ${estimated_metered_fare:.2f}</p>
             <p>Trip duration estimate: {estimated_trip_time_min:.1f} minutes</p>
             <p>Extra charges: ${(extra_amount + mta_tax + tip_amount):.2f}</p>
