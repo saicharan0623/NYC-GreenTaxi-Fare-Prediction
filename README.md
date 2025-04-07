@@ -56,7 +56,7 @@ pyarrow  # For reading parquet files
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/nyc-taxi-analysis.git
+git clone https://github.com/saicharan0623/nyc-taxi-analysis.git
 cd nyc-taxi-analysis
 ```
 
