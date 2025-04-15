@@ -39,6 +39,9 @@ st.markdown("""
         color: #666;
         font-size: 0.9em;
     }
+    h2{
+    color:#000;
+    }
 </style>
 """, unsafe_allow_html=True)
 
