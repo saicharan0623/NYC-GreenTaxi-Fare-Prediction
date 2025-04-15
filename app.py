@@ -173,13 +173,12 @@ if submitted:
         st.metric("Airport Charges", f"${fare_details['airport_charges']:.2f}")
         st.metric("Tolls", f"${fare_details['tolls']:.2f}")
     
-    # Total fare
     st.markdown(f"""
-    <div class="prediction-box">
-        <h2>Estimated Total Fare: ${fare_details['total']:.2f}</h2>
-        <p class="info-text">(Including ${fare_details['tip']:.2f} tip)</p>
-    </div>
-    """, unsafe_allow_html=True)
+<div class="prediction-box">
+    <h2 style="color: #000000;">Estimated Total Fare: ${fare_details['total']:.2f}</h2>
+    <p class="info-text">(Including ${fare_details['tip']:.2f} tip)</p>
+</div>
+""", unsafe_allow_html=True)
     
     # Fare breakdown chart
     breakdown_data = {
