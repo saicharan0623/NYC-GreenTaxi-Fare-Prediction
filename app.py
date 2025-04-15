@@ -34,13 +34,21 @@ st.markdown("""
         border-radius: 5px;
         margin: 20px 0;
         text-align: center;
+        color: #000000;  /* Ensures black text */
+    }
+    .prediction-box h2 {
+        color: #000000 !important;  /* Forces black color for the heading */
     }
     .info-text {
-        color: #666;
+        color: #000000;  /* Black color for the tip text */
         font-size: 0.9em;
     }
-    h2{
-    color:#000;
+    /* Ensure all other text is black */
+    body {
+        color: #000000 !important;
+    }
+    .stTextInput, .stNumberInput, .stSelectbox, .stTimeInput {
+        color: #000000 !important;
     }
 </style>
 """, unsafe_allow_html=True)
